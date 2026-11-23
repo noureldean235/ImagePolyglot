@@ -1,0 +1,20 @@
+@ImagePolyglot_HostAddress = https://localhost:7265
+
+### Upload Avatar
+POST https://localhost:7265/api/profile/avatar
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="avatar"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< D:/projects/ImagePolyglot/ImagePolyglot/test2.jpg
+--MyBoundary--
+### Read Image Metadata
+GET https://localhost:7265/api/profile/metadata/093eef40-b8a8-4be3-afa3-5ea7fcf1b576.jpg
+
+### Read Fake Image Metadata
+GET https://localhost:7265/api/profile/metadata/4d7917c7-90f9-4ad7-bb6b-1be48e4592bc.jpg
+
+### Read Metadata
+GET https://localhost:7265/api/profile/metadata/106c8fff-528d-4c59-9738-409d865be43e.jpg

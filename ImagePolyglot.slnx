@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ImagePolyglot.Runner/ImagePolyglot.Runner.csproj" />
+  <Project Path="ImagePolyglot/ImagePolyglot.csproj" />
+</Solution>
